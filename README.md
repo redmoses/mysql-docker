@@ -66,7 +66,7 @@ $ mysql shell
 ## Data location
 The data will be stored in the location `~/Workspace/mysql-docker/data`
 
-## Refreshing your database
+## Refreshing the database
 If you want to start fresh and delete all old data you can do the following -
 ```bash
 $ mysql down && sudo rm -rf ~/Workspace/mysql-docker/data && mysql up
