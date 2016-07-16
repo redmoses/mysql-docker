@@ -28,7 +28,9 @@ The first time you use this please run the following command. This command will 
 mysql up
 ```
 
-## Control MySql
+## Available commands
+Once you've initialized the docker you can open up your terminal and use the following commands accordingly.
+
 #### Start MySql
 ```
 mysql start
@@ -49,3 +51,6 @@ mysql logs
 ```
 mysql shell
 ```
+
+## Data location
+The data will be stored in the location ```~/Workspace/mysql-docker/data```
