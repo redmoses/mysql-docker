@@ -20,4 +20,4 @@ logs:
 	docker-compose logs
 
 shell:
-	docker exec -ti mysql-db01 bash -e /root/login.sh
+	docker exec -ti mysql-db01 bash -e /root/mysql.sh

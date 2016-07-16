@@ -9,5 +9,5 @@ mysql:
     - MYSQL_USER=testuser
     - MYSQL_PASSWORD=testpass
   volumes:
-    - ./config/login.sh:/root/login.sh
+    - ./config/mysql.sh:/root/mysql.sh
     - ./data:/var/lib/mysql
