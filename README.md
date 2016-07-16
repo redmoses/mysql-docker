@@ -1,10 +1,16 @@
 > I usually keep my files in the location ```~/Workspace```. If you prefer to keep it somewhere else please change the commands accordingly.
 
 ## Prerequisites
-
+The links for the installation guides are given along with the prerequisites
 * Docker
-* docker-compose
+  * [Mac](https://download.docker.com/mac/beta/Docker.dmg)
+  * [Linux](https://docs.docker.com/engine/installation/linux/)
+  * [Windows](https://download.docker.com/win/beta/InstallDocker.msi)
+* [docker-compose](https://docs.docker.com/compose/install/)
 * make
+  * [Mac](http://stackoverflow.com/a/11494872/2894655)
+  * [Linux](http://www.cyberciti.biz/faq/debian-linux-install-gnu-gcc-compiler/)
+  * [Windows](http://gnuwin32.sourceforge.net/packages/make.htm)
 
 ## Clone the repository
 ```bash
@@ -54,3 +60,9 @@ mysql shell
 
 ## Data location
 The data will be stored in the location ```~/Workspace/mysql-docker/data```
+
+## Refreshing your database
+If you want to start fresh and delete all old data you can do the following - 
+```bash
+mysql down && sudo rm -rf ~/Workspace/mysql-docker/data && mysql up
+```
