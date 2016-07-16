@@ -66,6 +66,14 @@ $ mysql shell
 ## Data location
 The data will be stored in the location `~/Workspace/mysql-docker/data`
 
+## MySql Configurations
+
+To edit your credentials you can open up `docker-compose.yml` and change the environment variables accordingly.
+* `MYSQL_ROOT_PASSWORD` The root password of your database server
+* `MYSQL_DATABASE` The name of the default database to start the container with. You can ignore this if you don't want the server to start with an already created database.
+* `MYSQL_USER` If you've created a default database then the user defined here will have all permissions over that database.
+* `MYSQL_PASSWORD` The default user's password
+
 ## Refreshing the database
 If you want to start fresh and delete all old data you can do the following -
 ```bash
