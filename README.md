@@ -14,7 +14,7 @@ The links for the installation guides are given along with the prerequisites
 
 ## Clone the repository
 ```bash
-git clone https://github.com/redmoses/mysql-docker.git ~/Workspace/mysql-docker
+$ git clone https://github.com/redmoses/mysql-docker.git ~/Workspace/mysql-docker
 ```
 
 ## Create an alias
