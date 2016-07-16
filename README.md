@@ -18,14 +18,14 @@ git clone https://github.com/redmoses/mysql-docker.git ~/Workspace/mysql-docker
 ```
 
 ## Create an alias
-Add the below alias in your `.zshrc` or `.bashrc` file depending on the shell you are using
+Add the following line in your `.zshrc` or `.bashrc` file depending on the shell you are using
 
 ```bash
 alias mysql='cd ~/Workspace/mysql-docker/ && make '
 ```
 Don't forget to load the alias in your environment. You can do so by using the following command
 ```bash
-source ~/.zshrc
+$ source ~/.zshrc
 ```
 
 ## Initialize
