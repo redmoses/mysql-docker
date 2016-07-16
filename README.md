@@ -29,9 +29,9 @@ source ~/.zshrc
 ```
 
 ## Initialize
-The first time you use this please run the following command. This command will download mysql docker image if it's not already there. Then it will start it up according to the `docker-compose.yml` configuration.
+The first time you start your mysql docker you have to run the following command. This command will download mysql docker image if it's not already there. Then it will start it up according to the `docker-compose.yml` configuration.
 ```
-mysql up
+$ mysql up
 ```
 
 ## Available commands
@@ -40,27 +40,27 @@ Once you've initialized the docker you can open up your terminal and use the fol
 #### Start MySql
 Start up the mysql container
 ```
-mysql start
+$ mysql start
 ```
 #### Stop MySql
 Stop the mysql container
 ```
-mysql stop
+$ mysql stop
 ```
 #### Restart MySql
 Restart the mysql container
 ```
-mysql restart
+$ mysql restart
 ```
 #### MySql logs
 Show the logs of the running container
 ```
-mysql logs
+$ mysql logs
 ```
 #### MySql shell
 To connect to mysql shell
 ```
-mysql shell
+$ mysql shell
 ```
 
 ## Data location
@@ -69,5 +69,5 @@ The data will be stored in the location `~/Workspace/mysql-docker/data`
 ## Refreshing your database
 If you want to start fresh and delete all old data you can do the following -
 ```bash
-mysql down && sudo rm -rf ~/Workspace/mysql-docker/data && mysql up
+$ mysql down && sudo rm -rf ~/Workspace/mysql-docker/data && mysql up
 ```
