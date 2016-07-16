@@ -38,22 +38,27 @@ mysql up
 Once you've initialized the docker you can open up your terminal and use the following commands accordingly.
 
 #### Start MySql
+Start up the mysql container
 ```
 mysql start
 ```
 #### Stop MySql
+Stop the mysql container
 ```
 mysql stop
 ```
 #### Restart MySql
+Restart the mysql container
 ```
 mysql restart
 ```
 #### MySql logs
+Show the logs of the running container
 ```
 mysql logs
 ```
 #### MySql shell
+To connect to mysql shell
 ```
 mysql shell
 ```
