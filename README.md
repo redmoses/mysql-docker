@@ -38,7 +38,7 @@ $ mysql up
 ```
 
 ## Available commands
-Once you've initialized the docker you can open up your terminal and use the following commands accordingly.
+Once you've initialized the docker you can open up your terminal and use the following commands accordingly. Please bare in mind the commands will control both MySQL container and phpMyadmin container together.
 
 #### Start MySql
 Start up the mysql container
@@ -86,3 +86,8 @@ If you want to start fresh and delete all old data you can do the following -
 ```bash
 $ mysql down && sudo rm -rf ~/Workspace/mysql-docker/data && mysql up
 ```
+
+
+## Access
+
+You may access MySql on your local 3306 port and phpMyadmin on your local 8080 port.
