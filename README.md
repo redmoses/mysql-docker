@@ -24,7 +24,7 @@ $ git clone https://github.com/redmoses/mysql-docker.git ~/Workspace/mysql-docke
 Add the following line in your `.zshrc` or `.bashrc` file depending on the shell you are using
 
 ```bash
-alias mysql='cd ~/Workspace/mysql-docker/ && make '
+alias mysql='make -C ~/Workspace/mysql-docker/ '
 ```
 Don't forget to load the alias in your environment. You can do so by using the following command
 ```bash
@@ -69,7 +69,19 @@ $ mysql shell
 ## Data location
 The data will be stored in the location `~/Workspace/mysql-docker/data`
 
-## Refreshing your database
+## MySql configurations
+
+To edit your configurations you can open up `docker-compose.yml` and change the environment variables accordingly.
+* `MYSQL_ROOT_PASSWORD` The root password of your database server
+* `MYSQL_DATABASE` The name of the default database to start the container with. You can ignore this if you don't want the server to start with an already created database.
+* `MYSQL_USER` If you've created a default database then the user defined here will have all permissions over that database.
+* `MYSQL_PASSWORD` The default user's password
+
+If you want to have custom mysql settings you can edit the file `config/custom.cnf` according to your needs.
+
+You can learn more about this image from [here](https://hub.docker.com/_/mysql/).
+
+## Refreshing the database
 If you want to start fresh and delete all old data you can do the following -
 ```bash
 $ mysql down && sudo rm -rf ~/Workspace/mysql-docker/data && mysql up
