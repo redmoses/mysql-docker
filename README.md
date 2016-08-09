@@ -1,3 +1,6 @@
+MySQL + PHPMYADMIN
+==================
+
 > I usually keep my files in the location `~/Workspace`. If you prefer to keep it somewhere else please change the commands accordingly.
 
 ## Prerequisites
